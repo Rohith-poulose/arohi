@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>from mr Arohi</title>
+    <title>from Mr. Arohi</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="first">
             <div class="box">
-                <h2 class="title">Hey Mrs Arohi!..</h2>
-                <h4>shall i give you a surprise</h4>
+                <h2 class="title">Hey Mrs. Arohi!..</h2>
+                <h4>Shall I give you a surprise?</h4>
                 <div class="btns">
-                    <button>yeah</button>
-                    <button>nah</button>
+                    <button onclick="showYeah()">Yeah</button>
+                    <button onclick="showNah()">Nah</button>
                 </div>
             </div>
         </div>
-        <div class="yeah">
+        <div class="yeah" style="display: none;">
             <div class="box">
-                <h3>do you heard this song?</h3>
-                <audio src="assets/for you my arohimp3" autoplay controls></audio>
-                <button>yeah</button>
+                <h3>Have you heard this song?</h3>
+                <audio src="assets/for you my arohi.mp3" controls></audio>
+                <button>Yeah</button>
             </div>
         </div>
-        <div class="magic">
+        <div class="magic" style="display: none;">
             <div class="box">
-                <h3>may i show a magic?</h3>
-                <button>sure</button>
+                <h3>May I show a magic?</h3>
+                <button>Sure</button>
             </div>
         </div>
-        <div class="mix">
+        <div class="mix" style="display: none;">
             <div class="box">
-                <h3>add some ingredients</h3>
+                <h3>Add some ingredients</h3>
                 <div class="mixture">
                     <img src="assets/3913324-200.png" width="40px">
                     <img src="assets/images.png" width="40px">
                     <img src="assets/free-video-icon-831-thumb.png" width="40px">
                     <img src="assets/5105507.png" width="40px">
                 </div>
-                <button>show the magic</button>
-            </div>
-            <div class="video">
-                <div class="box">
-                    <h3>here it is</h3>
-                    <video src="assets/hero vdo.mp4" controls width="100%"></video>
-                </div>
+                <button>Show the magic</button>
             </div>
         </div>
+        <div class="video" style="display: none;">
+            <div class="box">
+                <h3>Here it is</h3>
+                <video src="assets/hero vdo.mp4" controls width="100%"></video>
+            </div>
+        </div>
+        <div id="nahMessage" style="display: none; text-align: center; margin-top: 20px;">
+            <p>sherinna venda engil venda...>-<</p>
+        </div>
     </div>
-</body>
+    <script>
+        const first = document.getElementsByClassName("first")[0];
+        const yeah = document.getElementsByClassName("yeah")[0];
+        const magic = document.getElementsByClassName("magic")[0];
+        const mix = document.getElementsByClassName("mix")[0];
+        const video = document.getElementsByClassName("video")[0];
+        const nahMessage = document.getElementById("nahMessage");
 
+        function showYeah() {
+            yeah.style.display = "block";
+            first.style.display = "none";
+        }
+
+        function showNah() {
+            nahMessage.style.display = "block";
+            first.style.display = "none";
+        }
+    </script>
+</body>
 </html>
