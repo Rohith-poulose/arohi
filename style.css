@@ -63,3 +63,8 @@ button:focus{
 .video{
     display: none;
 }
+video{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px;
+}
