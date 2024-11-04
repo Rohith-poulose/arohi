@@ -22,13 +22,13 @@
             <div class="box">
                 <h3>Have you heard this song?</h3>
                 <audio src="assets/for you my arohi.mp3" controls></audio>
-                <button>Yeah</button>
+                <button onclick="showmagic()">Yeah</button>
             </div>
         </div>
         <div class="magic" style="display: none;">
             <div class="box">
                 <h3>May I show a magic?</h3>
-                <button>Sure</button>
+                <button onclick="showmix()">Sure</button>
             </div>
         </div>
         <div class="mix" style="display: none;">
@@ -40,7 +40,7 @@
                     <img src="assets/free-video-icon-831-thumb.png" width="40px">
                     <img src="assets/5105507.png" width="40px">
                 </div>
-                <button>Show the magic</button>
+                <button onclick="showvideo()">Show the magic</button>
             </div>
         </div>
         <div class="video" style="display: none;">
@@ -69,6 +69,18 @@
         function showNah() {
             nahMessage.style.display = "block";
             first.style.display = "none";
+        }
+        function showmagic(){
+            yeah.style.display = "none";
+            magic.style.display = "block";
+        }
+        function showmix(){
+            magic.style.display = "none";
+            mix.style.display = "block";
+        }
+        function showvideo(){
+            mix.style.display = "none";
+            video.style.display = "block";
         }
     </script>
 </body>
