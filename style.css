@@ -11,7 +11,6 @@ body{
     font-family: "poppins";
     text-align: center;
 }
-
 .container{
     margin: 10px;
 }
@@ -49,7 +48,7 @@ button:focus{
 .first{
     width: 100%;
     padding: 10px;
-    display: block;
+    display: none;
 }
 .yeah{
     display: none;
@@ -67,4 +66,24 @@ video{
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px;
+}
+p{
+    text-align: left;
+}
+.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11{
+    display: none;
+}
+.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10,.b11{
+    display: none;
+    margin: 0 auto;
+}
+.product{
+    display: none;
+}
+.footage{
+    display: none;
+}
+.footage>video{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px #700000;
 }

@@ -8,6 +8,44 @@
 </head>
 <body>
     <div class="container">
+        <div class="message">
+            <h1>Hello, I am Mr. Arohi</h1>
+            <p class="p1">MR: Ath enik thonanu.</p>
+            <button class="b1" onclick="showp2()">nth thonanu?</button>
+            <p class="p2">MR: Nammal.</p>
+            <button class="b2" onclick="showp3()">nammal?</button>
+            <p class="p3">MR: Ithreyum peru.</p>
+            <button class="b3"onclick="showp4()">ithryum peru?</button>
+            <p class="p4">MR: ethreyum peru.</p>
+            <button class="b4"onclick="showp5()">ahm etheryum peru?</button>
+            <p class="p5">MR: Nammal jeevikunathil.</p>
+            <button class="b5"onclick="showp6()">jeevikunathil?</button>
+            <p class="p6">MR: Valare kuravu alukalk mathram.</p>
+            <button class="b6"onclick="showp7()">mathram ntha?</button>
+            <p class="p7">MR: Kittunna bhagym ahn.</p>
+            <button class="b7"onclick="showp8()">nth bhagyam?</button>
+            <p class="p8">MR: THE RIGHT PERSON.</p>
+            <button class="b8"onclick="showp9()">ohh....</button>
+            <p class="p9">MR: AT.</p>
+            <button class="b9"onclick="showp10()">at?</button>
+            <p class="p10">MR: THE RIGHT TIME.</p>
+            <button class="b10"onclick="showp11()">ahha</button>
+            <p class="p11">MR: Ennokke ulla karyngl.</p>
+            <button class="b11"onclick="showproduct()">really</button>
+        </div>
+        <div class="product">
+            <h1>I mad this as a video, wanna see?</h1>
+            <button onclick="showfootage()">yeah!</button>
+        </div>
+        <div class="footage">
+            <h3>YOU ARE MY RIGHT PERSON
+                <br>
+                AT
+                <br>
+                THE RIGHT TIME
+            </h3>
+            <video src="assets/right person.mp4" controls width="100%"></video>
+        </div>
         <div class="first">
             <div class="box">
                 <h2 class="title">Hey Mrs. Arohi!..</h2>
@@ -66,6 +104,31 @@
         const mix = document.getElementsByClassName("mix")[0];
         const video = document.getElementsByClassName("video")[0];
         const nahMessage = document.getElementById("nahMessage");
+        const p2=document.getElementsByClassName("p2")[0];
+        const p3=document.getElementsByClassName("p3")[0];
+        const p4=document.getElementsByClassName("p4")[0];
+        const p5=document.getElementsByClassName("p5")[0];
+        const p6=document.getElementsByClassName("p6")[0];
+        const p7=document.getElementsByClassName("p7")[0];
+        const p8=document.getElementsByClassName("p8")[0];
+        const p9=document.getElementsByClassName("p9")[0];
+        const p10=document.getElementsByClassName("p10")[0];
+        const p11=document.getElementsByClassName("p11")[0];
+        const b1=document.getElementsByClassName("b1")[0];
+        const b2=document.getElementsByClassName("b2")[0];
+        const b3=document.getElementsByClassName("b3")[0];
+        const b4=document.getElementsByClassName("b4")[0];
+        const b5=document.getElementsByClassName("b5")[0];
+        const b6=document.getElementsByClassName("b6")[0];
+        const b7=document.getElementsByClassName("b7")[0];
+        const b8=document.getElementsByClassName("b8")[0];
+        const b9=document.getElementsByClassName("b9")[0];
+        const b10=document.getElementsByClassName("b10")[0];
+        const b11=document.getElementsByClassName("b11")[0];
+        const product=document.getElementsByClassName("product")[0];
+        const footage=document.getElementsByClassName("footage")[0];
+        const message=document.getElementsByClassName("message")[0];
+
 
         function showYeah() {
             yeah.style.display = "block";
@@ -87,6 +150,65 @@
         function showvideo(){
             mix.style.display = "none";
             video.style.display = "block";
+        }
+        function showp2(){
+            p2.style.display="block"
+            b2.style.display="block"
+            b1.style.display="none"
+        }
+        function showp3(){
+            p3.style.display="block"
+            b3.style.display="block"
+            b2.style.display="none"
+        }
+        function showp4(){
+            p4.style.display="block"
+            b4.style.display="block"
+            b3.style.display="none"
+        }
+        function showp5(){
+            p5.style.display="block"
+            b5.style.display="block"
+            b4.style.display="none"
+        }
+        function showp6(){
+            p6.style.display="block"
+            b6.style.display="block"
+            b5.style.display="none"
+        }
+        function showp7(){
+            p7.style.display="block"
+            b7.style.display="block"
+            b6.style.display="none"
+        }
+        function showp8(){
+            p8.style.display="block"
+            b8.style.display="block"
+            b7.style.display="none"
+        }
+        function showp9(){
+            p9.style.display="block"
+            b9.style.display="block"
+            b8.style.display="none"
+        }
+        function showp10(){
+            p10.style.display="block"
+            b10.style.display="block"
+            b9.style.display="none"
+        }
+        function showp11(){
+            p11.style.display="block"
+            b11.style.display="block"
+            b10.style.display="none"
+        }
+        function showproduct(){
+            message.style.display="none"
+            product.style.display="block"
+        }
+        function showfootage(){
+            product.style.display="none"
+            footage.style.display="block"
+            
         }
     </script>
 </body>
