@@ -11,10 +11,10 @@
 <body>
     <div class="container">
         <div class="btns">
-        <button onclick="showone()">one</button>
-        <button onclick="showtwo()">two</button>
-        <button onclick="showthree()">three</button>
-    </div>
+            <button onclick="showone()">one</button>
+            <button onclick="showtwo()">two</button>
+            <button onclick="showthree()">three</button>
+        </div>
         <div class="three">
             <div class="content">
                 <h2>Mrs Arohi</h2>
@@ -69,57 +69,57 @@
             </div>
         </div>
         <div class="one">
-        <div class="first">
-            <div class="box">
-                <h2 class="title">Hey Mrs. Arohi!..</h2>
-                <h4>Shall I give you a surprise?</h4>
-                <div class="btns">
-                    <button onclick="showYeah()">Yeah</button>
-                    <button onclick="showNah()">Nah</button>
+            <div class="first">
+                <div class="box">
+                    <h2 class="title">Hey Mrs. Arohi!..</h2>
+                    <h4>Shall I give you a surprise?</h4>
+                    <div class="btns">
+                        <button onclick="showYeah()">Yeah</button>
+                        <button onclick="showNah()">Nah</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="yeah" style="display: none;">
-            <div class="box">
-                <h3>Have you heard this song?</h3>
-                <audio src="assets/for you my arohi.mp3" controls></audio>
-                <p>before clicking the yeah button pause the audio </p>
-                <button onclick="showmagic()">Yeah</button>
-            </div>
-        </div>
-        <div class="magic" style="display: none;">
-            <div class="box">
-                <h3>May I show a magic?</h3>
-                <button onclick="showmix()">Sure</button>
-            </div>
-        </div>
-        <div class="mix" style="display: none;">
-            <div class="box">
-                <h3>These are the things we adding to create a magic</h3>
-                <div class="mixture">
-                    <img src="assets/3913324-200.png" width="40px">
-                    <img src="assets/images.png" width="40px">
-                    <img src="assets/free-video-icon-831-thumb.png" width="40px">
-                    <img src="assets/5105507.png" width="40px">
+            <div class="yeah" style="display: none;">
+                <div class="box">
+                    <h3>Have you heard this song?</h3>
+                    <audio src="assets/for you my arohi.mp3" controls></audio>
+                    <p>before clicking the yeah button pause the audio </p>
+                    <button onclick="showmagic()">Yeah</button>
                 </div>
-                <button onclick="showvideo()">Show the magic</button>
+            </div>
+            <div class="magic" style="display: none;">
+                <div class="box">
+                    <h3>May I show a magic?</h3>
+                    <button onclick="showmix()">Sure</button>
+                </div>
+            </div>
+            <div class="mix" style="display: none;">
+                <div class="box">
+                    <h3>These are the things we adding to create a magic</h3>
+                    <div class="mixture">
+                        <img src="assets/3913324-200.png" width="40px">
+                        <img src="assets/images.png" width="40px">
+                        <img src="assets/free-video-icon-831-thumb.png" width="40px">
+                        <img src="assets/5105507.png" width="40px">
+                    </div>
+                    <button onclick="showvideo()">Show the magic</button>
+                </div>
+            </div>
+            <div class="video" style="display: none;">
+                <div class="box">
+                    <h3>Here it is</h3>
+                    <video src="assets/mainv2.mp4" controls width="100%"></video>
+                    <p>ehn thangameey
+                        my blush queen
+                        You're the melody I didn’t know my heart needed.
+                        Being with you feels like finding the missing piece of my life's puzzle.
+                        Every moment with you feels like a glimpse of paradise.</p>
+                </div>
+            </div>
+            <div id="nahMessage" style="display: none; text-align: center; margin-top: 20px;">
+                <p>sherinna venda engil venda...>-<< /p>
             </div>
         </div>
-        <div class="video" style="display: none;">
-            <div class="box">
-                <h3>Here it is</h3>
-                <video src="assets/mainv2.mp4" controls width="100%"></video>
-                <p>ehn thangameey
-                    my blush queen
-                    You're the melody I didn’t know my heart needed.
-                    Being with you feels like finding the missing piece of my life's puzzle.
-                    Every moment with you feels like a glimpse of paradise.</p>
-            </div>
-        </div>
-        <div id="nahMessage" style="display: none; text-align: center; margin-top: 20px;">
-            <p>sherinna venda engil venda...>-<< /p>
-        </div>
-    </div>
     </div>
     <script>
         const first = document.getElementsByClassName("first")[0];
@@ -156,29 +156,29 @@
         const content = document.getElementsByClassName("content")[0];
         const one = document.getElementsByClassName("one")[0];
         const two = document.getElementsByClassName("two")[0];
-        const three= document.getElementsByClassName("three")[0];
+        const three = document.getElementsByClassName("three")[0];
         const btns = document.getElementsByClassName("btns")[0];
 
-        function showone(){
-            let pass=window.prompt("enter the password")
-            if(pass=="hello mr arohi"){
-            one.style.display="block"
-            btns.style.display="none"
+        function showone() {
+            let pass = window.prompt("enter the password")
+            if (pass == "hello mr arohi") {
+                one.style.display = "block"
+                btns.style.display = "none"
             }
-            
+
         }
-        function showtwo(){
-            let pass=window.prompt("enter the password")
-            if(pass=="hello mr arohi"){
-            two.style.display="block"
-            btns.style.display="none"
+        function showtwo() {
+            let pass = window.prompt("enter the password")
+            if (pass == "hello mr arohi") {
+                two.style.display = "block"
+                btns.style.display = "none"
             }
         }
-        function showthree(){
-            let pass=window.prompt("enter the password")
-            if(pass=="hello mr arohi"){
-            three.style.display="block"
-            btns.style.display="none"
+        function showthree() {
+            let pass = window.prompt("enter the password")
+            if (pass == "hello mr arohi") {
+                three.style.display = "block"
+                btns.style.display = "none"
             }
         }
 
