@@ -10,55 +10,65 @@
 
 <body>
     <div class="container">
-        <div class="content">
-            <h2>Mrs Arohi</h2>
-            <h4>i wanna hug you while playing this song</h4>
-            <audio src="assets/biggest-blessings_1.mp3" controls></audio>
-            <button onclick="showclip()">sure</button>
+        <div class="btns">
+        <button onclick="showone()">one</button>
+        <button onclick="showtwo()">two</button>
+        <button onclick="showthree()">three</button>
+    </div>
+        <div class="three">
+            <div class="content">
+                <h2>Mrs Arohi</h2>
+                <h4>i wanna hug you while playing this song</h4>
+                <audio src="assets/biggest-blessings_1.mp3" controls></audio>
+                <button onclick="showclip()">sure</button>
+            </div>
+            <div class="clip">
+                <h1>surprise</h1>
+                <p>you are the biggest blessing of my life</p>
+                <video src="assets/biggest blessings.mp4" controls width="100%"></video>
+            </div>
         </div>
-        <div class="clip">
-            <h1>surprise</h1>
-            <p>you are the biggest blessing of my life</p>
-            <video src="assets/biggest blessings.mp4" controls width="100%"></video>
+        <div class="two">
+            <div class="message">
+                <h1>Hello, I am Mr. Arohi</h1>
+                <p class="p1">MR: Ath enik thonanu.</p>
+                <button class="b1" onclick="showp2()">nth thonanu?</button>
+                <p class="p2">MR: Nammal.</p>
+                <button class="b2" onclick="showp3()">nammal?</button>
+                <p class="p3">MR: Ithreyum peru.</p>
+                <button class="b3" onclick="showp4()">ithryum peru?</button>
+                <p class="p4">MR: ethreyum peru.</p>
+                <button class="b4" onclick="showp5()">ahm etheryum peru?</button>
+                <p class="p5">MR: Nammal jeevikunathil.</p>
+                <button class="b5" onclick="showp6()">jeevikunathil?</button>
+                <p class="p6">MR: Valare kuravu alukalk mathram.</p>
+                <button class="b6" onclick="showp7()">mathram ntha?</button>
+                <p class="p7">MR: Kittunna bhagym ahn.</p>
+                <button class="b7" onclick="showp8()">nth bhagyam?</button>
+                <p class="p8">MR: THE RIGHT PERSON.</p>
+                <button class="b8" onclick="showp9()">ohh....</button>
+                <p class="p9">MR: AT.</p>
+                <button class="b9" onclick="showp10()">at?</button>
+                <p class="p10">MR: THE RIGHT TIME.</p>
+                <button class="b10" onclick="showp11()">ahha</button>
+                <p class="p11">MR: Ennokke ulla karyngl.</p>
+                <button class="b11" onclick="showproduct()">really</button>
+            </div>
+            <div class="product">
+                <h1>I mad this as a video, wanna see?</h1>
+                <button onclick="showfootage()">yeah!</button>
+            </div>
+            <div class="footage">
+                <h3>YOU ARE MY RIGHT PERSON
+                    <br>
+                    AT
+                    <br>
+                    THE RIGHT TIME
+                </h3>
+                <video src="assets/right person.mp4" controls width="100%"></video>
+            </div>
         </div>
-        <div class="message">
-            <h1>Hello, I am Mr. Arohi</h1>
-            <p class="p1">MR: Ath enik thonanu.</p>
-            <button class="b1" onclick="showp2()">nth thonanu?</button>
-            <p class="p2">MR: Nammal.</p>
-            <button class="b2" onclick="showp3()">nammal?</button>
-            <p class="p3">MR: Ithreyum peru.</p>
-            <button class="b3" onclick="showp4()">ithryum peru?</button>
-            <p class="p4">MR: ethreyum peru.</p>
-            <button class="b4" onclick="showp5()">ahm etheryum peru?</button>
-            <p class="p5">MR: Nammal jeevikunathil.</p>
-            <button class="b5" onclick="showp6()">jeevikunathil?</button>
-            <p class="p6">MR: Valare kuravu alukalk mathram.</p>
-            <button class="b6" onclick="showp7()">mathram ntha?</button>
-            <p class="p7">MR: Kittunna bhagym ahn.</p>
-            <button class="b7" onclick="showp8()">nth bhagyam?</button>
-            <p class="p8">MR: THE RIGHT PERSON.</p>
-            <button class="b8" onclick="showp9()">ohh....</button>
-            <p class="p9">MR: AT.</p>
-            <button class="b9" onclick="showp10()">at?</button>
-            <p class="p10">MR: THE RIGHT TIME.</p>
-            <button class="b10" onclick="showp11()">ahha</button>
-            <p class="p11">MR: Ennokke ulla karyngl.</p>
-            <button class="b11" onclick="showproduct()">really</button>
-        </div>
-        <div class="product">
-            <h1>I mad this as a video, wanna see?</h1>
-            <button onclick="showfootage()">yeah!</button>
-        </div>
-        <div class="footage">
-            <h3>YOU ARE MY RIGHT PERSON
-                <br>
-                AT
-                <br>
-                THE RIGHT TIME
-            </h3>
-            <video src="assets/right person.mp4" controls width="100%"></video>
-        </div>
+        <div class="one">
         <div class="first">
             <div class="box">
                 <h2 class="title">Hey Mrs. Arohi!..</h2>
@@ -110,6 +120,7 @@
             <p>sherinna venda engil venda...>-<< /p>
         </div>
     </div>
+    </div>
     <script>
         const first = document.getElementsByClassName("first")[0];
         const yeah = document.getElementsByClassName("yeah")[0];
@@ -143,6 +154,25 @@
         const message = document.getElementsByClassName("message")[0];
         const clip = document.getElementsByClassName("clip")[0];
         const content = document.getElementsByClassName("content")[0];
+        const one = document.getElementsByClassName("one")[0];
+        const two = document.getElementsByClassName("two")[0];
+        const three= document.getElementsByClassName("three")[0];
+        const btns = document.getElementsByClassName("btns")[0];
+
+        function showone(){
+            one.style.display="block"
+            btns.style.display="none"
+            
+        }
+        function showtwo(){
+            two.style.display="block"
+            btns.style.display="none"
+
+        }
+        function showthree(){
+            three.style.display="block"
+            btns.style.display="none"
+        }
 
         function showYeah() {
             yeah.style.display = "block";

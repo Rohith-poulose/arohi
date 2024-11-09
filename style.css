@@ -48,7 +48,6 @@ button:focus{
 .first{
     width: 100%;
     padding: 10px;
-    display: none;
 }
 .yeah{
     display: none;
@@ -87,9 +86,9 @@ p{
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px #700000;
 }
-.message{
+.clip{
     display: none;
 }
-.clip{
+.one,.two,.three{
     display: none;
 }
