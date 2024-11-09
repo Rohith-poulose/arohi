@@ -87,3 +87,9 @@ p{
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px #700000;
 }
+.message{
+    display: none;
+}
+.clip{
+    display: none;
+}

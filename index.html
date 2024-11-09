@@ -8,6 +8,17 @@
 </head>
 <body>
     <div class="container">
+        <div class="content">
+            <h2>Mrs Arohi</h2>
+            <h4>i wanna hug you while playing this song</h4>
+            <audio src="assets/biggest-blessings_1.mp3"controls></audio>
+            <button onclick="showclip()">sure</button>
+        </div>
+        <div class="clip">
+            <h1>surprise</h1>
+            <p>you are the biggest blessing of my life</p>
+            <video src="assets/biggest blessings.mp4"controls></video>
+        </div>
         <div class="message">
             <h1>Hello, I am Mr. Arohi</h1>
             <p class="p1">MR: Ath enik thonanu.</p>
@@ -128,7 +139,8 @@
         const product=document.getElementsByClassName("product")[0];
         const footage=document.getElementsByClassName("footage")[0];
         const message=document.getElementsByClassName("message")[0];
-
+        const clip=document.getElementsByClassName("clip")[0];
+        const content=document.getElementsByClassName("content")[0];
 
         function showYeah() {
             yeah.style.display = "block";
@@ -209,6 +221,10 @@
             product.style.display="none"
             footage.style.display="block"
             
+        }
+        function showclip(){
+            clip.style.display="block"
+            content.style.display="none"
         }
     </script>
 </body>
