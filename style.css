@@ -13,6 +13,7 @@ body{
 }
 .container{
     margin: 10px;
+    animation-duration: 2s;
 }
 .box{
     display: inline;
@@ -92,3 +93,21 @@ p{
 .one,.two,.three{
     display: none;
 }
+.error{
+    animation-name: error;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes error {
+    0%   {background-color: red;}
+    10%  {background-color:#fdf0d5;}
+    20%   {background-color: red;}
+    30%  {background-color:#fdf0d5;}
+    40%   {background-color: red;}
+    50%  {background-color:#fdf0d5;}
+    60%   {background-color: red;}
+    70%  {background-color:#fdf0d5;}
+    80%   {background-color: red;}
+    90%  {background-color:#fdf0d5;}
+    1000%   {background-color: red;}
+  }
