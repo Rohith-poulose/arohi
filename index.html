@@ -160,7 +160,7 @@
         const btns = document.getElementsByClassName("btns")[0];
 
         function showone() {
-            let pass = window.prompt("enter the vibrate")
+            let pass = window.prompt("enter the password")
             if (pass == "hello mr arohi") {
                 one.style.display = "block"
                 btns.style.display = "none"
@@ -179,12 +179,24 @@
                 two.style.display = "block"
                 btns.style.display = "none"
             }
+            else{
+                navigator.vibrate(200); // vibrate for 200ms
+                navigator.vibrate([
+                    100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
+                ]);
+            }
         }
         function showthree() {
             let pass = window.prompt("enter the password")
             if (pass == "hello mr arohi") {
                 three.style.display = "block"
                 btns.style.display = "none"
+            }
+            else{
+                navigator.vibrate(200); // vibrate for 200ms
+                navigator.vibrate([
+                    100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
+                ]);
             }
         }
 
