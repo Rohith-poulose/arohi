@@ -159,7 +159,7 @@
         const three = document.getElementsByClassName("three")[0];
         const btns = document.getElementsByClassName("btns")[0];
         const container = document.getElementsByClassName("container")[0];
-        window.alert("updated")
+        window.alert("update done")
         function showone() {
             let pass = window.prompt("enter the password")
             if (pass == "hello mr arohi") {
@@ -171,9 +171,9 @@
                 navigator.vibrate([
                     100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
                 ]);
-                container.classList.add("error")
+                document.body.classList.add("error")
                 setTimeout(() => {
-                    container.classList.remove("error");
+                   document.body.classList.remove("error");
                 }, 2000);
             }
 
@@ -189,9 +189,9 @@
                 navigator.vibrate([
                     100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
                 ]);
-                container.classList.add("error")
+                document.body.classList.add("error")
                 setTimeout(() => {
-                    container.classList.remove("error");
+                   document.body.classList.remove("error");
                 }, 2000);
             }
         }
@@ -206,9 +206,9 @@
                 navigator.vibrate([
                     100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100,
                 ]);
-                container.classList.add("error")
+                document.body.classList.add("error")
                 setTimeout(() => {
-                    container.classList.remove("error");
+                   document.body.classList.remove("error");
                 }, 2000);
             }
         }
