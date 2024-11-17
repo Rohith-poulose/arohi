@@ -95,7 +95,7 @@ p{
 }
 .error{
     animation-name: error;
-    animation-duration: 200ms;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 @keyframes error {
