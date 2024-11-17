@@ -159,7 +159,7 @@
         const three = document.getElementsByClassName("three")[0];
         const btns = document.getElementsByClassName("btns")[0];
         const container = document.getElementsByClassName("container")[0];
-        window.alert("m")
+        window.alert("done")
         function showone() {
             let pass = window.prompt("enter the password")
             if (pass == "hello mr arohi") {
@@ -169,7 +169,7 @@
             else{
                 navigator.vibrate(200); // vibrate for 200ms
                 navigator.vibrate([
-                    200,500,300
+                    200,100,500,100,300
                 ]);
                 document.body.classList.add("error")
                 setTimeout(() => {
@@ -185,7 +185,7 @@
                 btns.style.display = "none"
             }
             else{
-                navigator.vibrate(1200); // vibrate for 200ms
+                navigator.vibrate(200); // vibrate for 200ms
                 navigator.vibrate([
                     1200,100,500,100,300
                 ]);
@@ -202,7 +202,7 @@
                 btns.style.display = "none"
             }
             else{
-                navigator.vibrate(1200); // vibrate for 200ms
+                navigator.vibrate(200); // vibrate for 200ms
                 navigator.vibrate([
                 200,100,500,100,300
                 ]);
