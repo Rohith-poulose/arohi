@@ -41,14 +41,14 @@ function showone() {
         one.style.display = "block"
         btns.style.display = "none"
     }
-    else{
+    else {
         navigator.vibrate(200); // vibrate for 200ms
         navigator.vibrate([
-            200,100,500,100,300
+            200, 100, 500, 100, 300
         ]);
         document.body.classList.add("error")
         setTimeout(() => {
-           document.body.classList.remove("error");
+            document.body.classList.remove("error");
         }, 2000);
     }
 
@@ -59,14 +59,14 @@ function showtwo() {
         two.style.display = "block"
         btns.style.display = "none"
     }
-    else{
+    else {
         navigator.vibrate(200); // vibrate for 200ms
         navigator.vibrate([
-            1200,100,500,100,300
+            1200, 100, 500, 100, 300
         ]);
         document.body.classList.add("error")
         setTimeout(() => {
-           document.body.classList.remove("error");
+            document.body.classList.remove("error");
         }, 2000);
     }
 }
@@ -76,14 +76,14 @@ function showthree() {
         three.style.display = "block"
         btns.style.display = "none"
     }
-    else{
+    else {
         navigator.vibrate(200); // vibrate for 200ms
         navigator.vibrate([
-        200,100,500,100,300
+            200, 100, 500, 100, 300
         ]);
         document.body.classList.add("error")
         setTimeout(() => {
-           document.body.classList.remove("error");
+            document.body.classList.remove("error");
         }, 2000);
     }
 }
@@ -100,7 +100,7 @@ function showNah() {
 function showmagic() {
     yeah.style.display = "none";
     magic.style.display = "block";
-}assword
+} assword
 function showmix() {
     magic.style.display = "none";
     mix.style.display = "block";
@@ -172,3 +172,16 @@ function showclip() {
     clip.style.display = "block"
     content.style.display = "none"
 }
+panel = document.getElementsByClassName("together")[0]
+photo = 1
+function animate() {
+
+    panel.style.background = `url(assets/${photo}.jpg);`
+    photo++
+
+    if(photo>6){
+        photo = 1
+    }
+
+}
+setTimeout(animate,300)
