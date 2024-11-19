@@ -100,7 +100,7 @@ function showNah() {
 function showmagic() {
     yeah.style.display = "none";
     magic.style.display = "block";
-} assword
+} 
 function showmix() {
     magic.style.display = "none";
     mix.style.display = "block";
@@ -172,16 +172,3 @@ function showclip() {
     clip.style.display = "block"
     content.style.display = "none"
 }
-panel = document.getElementsByClassName("together")[0]
-photo = 1
-function animate() {
-
-    panel.style.background = `url(assets/${photo}.jpg);`
-    photo++
-
-    if(photo>6){
-        photo = 1
-    }
-
-}
-setTimeout(animate,300)
