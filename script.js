@@ -172,3 +172,8 @@ function showclip() {
     clip.style.display = "block"
     content.style.display = "none"
 }
+const together=document.getElementsByClassName("together")[0];
+const together_1=document.getElementsByClassName("together-1")[0];
+const together_2=document.getElementsByClassName("together-2")[0];
+const together_3=document.getElementsByClassName("together-3")[0];
+
