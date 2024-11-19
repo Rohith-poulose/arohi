@@ -70,6 +70,7 @@ function showtwo() {
         }, 2000);
     }
 }
+
 function showthree() {
     let pass = window.prompt("enter the password")
     if (pass == "hello mr arohi") {
@@ -205,3 +206,21 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+function showfour() {
+    let pass = window.prompt("enter the password")
+    if (pass == "hello mr arohi") {
+        together.style.display = "block"
+        btns.style.display = "none"
+        document.body.classList.add("animated-bg")
+    }
+    else {
+        navigator.vibrate(200); // vibrate for 200ms
+        navigator.vibrate([
+            1200, 100, 500, 100, 300
+        ]);
+        document.body.classList.add("error")
+        setTimeout(() => {
+            document.body.classList.remove("error");
+        }, 2000);
+    }
+}
