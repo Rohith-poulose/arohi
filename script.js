@@ -100,7 +100,7 @@ function showNah() {
 function showmagic() {
     yeah.style.display = "none";
     magic.style.display = "block";
-} 
+}
 function showmix() {
     magic.style.display = "none";
     mix.style.display = "block";
@@ -172,8 +172,37 @@ function showclip() {
     clip.style.display = "block"
     content.style.display = "none"
 }
-const together=document.getElementsByClassName("together")[0];
-const together_1=document.getElementsByClassName("together-1")[0];
-const together_2=document.getElementsByClassName("together-2")[0];
-const together_3=document.getElementsByClassName("together-3")[0];
+const together = document.getElementsByClassName("together")[0];
+const together_1 = document.getElementsByClassName("together-1")[0];
+const together_2 = document.getElementsByClassName("together-2")[0];
+const together_3 = document.getElementsByClassName("together-3")[0];
+const commit_msg = document.getElementById("comit-msg")
 
+const commit_ans = document.getElementById("comit-ans")
+
+function showmsg() {
+    together_1.style.display = "none";
+    together_2.style.display = "block";
+    commit_ans.textContent= commit_msg.value;
+}
+function showtogether(){
+    together_3.style.display = "block";
+    together_2.style.display = "none";
+
+}
+
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbzl15JFDIfBJv3Iez2ReS_9ql_bIKbeIE7PJERblO70rDTWFKXkR7aVrSwuS-eUUtqp/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById("msg")
+// form.addEventListener('submit', e => {
+//   e.preventDefault()
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response => {
+//         msg.innerHTML="Message sent successfully"
+//         setTimeout (function(){
+//             msg.innerHTML="";
+//         },5000);
+//         form.reset()
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })

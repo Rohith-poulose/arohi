@@ -216,3 +216,10 @@ p {
 .together-3{
     display: none
 }
+input{
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #700000;
+    background: transparent;
+}
