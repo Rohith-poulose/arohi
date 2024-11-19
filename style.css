@@ -1,38 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     padding: 10px;
     background-color: #fdf0d5;
     color: #700000;
     font-family: "poppins";
     text-align: center;
 }
-.container{
+
+.container {
     margin: 10px;
     animation-duration: 2s;
 }
-.box{
+
+.box {
     display: inline;
     margin: auto;
     width: 70%;
     height: 100px;
 }
-.title{
-    padding: 20px 0px ;
+
+.title {
+    padding: 20px 0px;
 }
-h4{
+
+h4 {
     font-style: italic;
     padding: 20px 0px;
 }
-.btns{
+
+.btns {
     margin: 40px 0px;
     padding: 10px;
 }
-button{
+
+button {
     margin: 10px;
     padding: 5px 7px;
     border-radius: 5px;
@@ -42,72 +50,149 @@ button{
     font-weight: 400;
     transition: all 0.3s;
 }
-button:focus{
+
+button:focus {
     background-color: #700000;
     color: #fdf0d5;
 }
-.first{
+
+.first {
     width: 100%;
     padding: 10px;
 }
-.yeah{
+
+.yeah {
     display: none;
 }
-.magic{
+
+.magic {
     display: none;
 }
-.mix{
+
+.mix {
     display: none;
 }
-.video{
+
+.video {
     display: none;
 }
-video{
+
+video {
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px;
 }
-p{
+
+p {
     text-align: left;
 }
-.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11{
+
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8,
+.p9,
+.p10,
+.p11 {
     display: none;
 }
-.b2,.b3,.b4,.b5,.b6,.b7,.b8,.b9,.b10,.b11{
+
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7,
+.b8,
+.b9,
+.b10,
+.b11 {
     display: none;
     margin: 0 auto;
 }
-.product{
+
+.product {
     display: none;
 }
-.footage{
+
+.footage {
     display: none;
 }
-.footage>video{
+
+.footage>video {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px #700000;
 }
-.clip{
+
+.clip {
     display: none;
 }
-.one,.two,.three{
+
+.one,
+.two,
+.three {
     display: none;
 }
-.error{
+
+.error {
     animation-name: error;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes error {
-    0%   {background-color: red;}
-    10%  {background-color:#fdf0d5;}
-    20%   {background-color: red;}
-    30%  {background-color:#fdf0d5;}
-    40%   {background-color: red;}
-    50%  {background-color:#fdf0d5;}
-    60%   {background-color: red;}
-    70%  {background-color:#fdf0d5;}
-    80%   {background-color: red;}
-    90%  {background-color:#fdf0d5;}
-    1000%   {background-color: red;}
-  }
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background-color: #fdf0d5;
+    }
+
+    20% {
+        background-color: red;
+    }
+
+    30% {
+        background-color: #fdf0d5;
+    }
+
+    40% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: #fdf0d5;
+    }
+
+    60% {
+        background-color: red;
+    }
+
+    70% {
+        background-color: #fdf0d5;
+    }
+
+    80% {
+        background-color: red;
+    }
+
+    90% {
+        background-color: #fdf0d5;
+    }
+
+    1000% {
+        background-color: red;
+    }
+}
+.together{
+    /* animation: together 6s infinite; */
+    width: 100%; 
+    height: 100vh;
+    background: url(assets/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
