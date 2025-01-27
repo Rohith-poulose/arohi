@@ -248,3 +248,23 @@ function showfive() {
         }, 2000);
     }
 }
+function showfour_2() {
+    four_2.style.display = "block";
+    four_1.style.display = "none";
+}
+function showfour_3() {
+    four_3.style.display = "block";
+    four_2.style.display = "none";
+}
+function showfour_4() {
+    four_4.style.display = "block";
+    four_3.style.display = "none";
+}
+function showfour_5() {
+    four_5.style.display = "block";
+    four_4.style.display = "none";
+}
+function showfour_6() {
+    four_6.style.display = "block";
+    four_5.style.display = "none";
+}
