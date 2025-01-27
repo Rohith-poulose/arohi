@@ -229,3 +229,10 @@ input::placeholder{
     font-style: italic;
     margin-left: 5px;
 }
+.five,.five_2,.five_3,.five_4,.five_5,.five_6{
+    display: none;
+}
+.trend{
+    transform: rotate(0deg);
+    width: 100%;
+}

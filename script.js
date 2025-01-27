@@ -35,6 +35,13 @@ const two = document.getElementsByClassName("two")[0];
 const three = document.getElementsByClassName("three")[0];
 const btns = document.getElementsByClassName("btns")[0];
 const container = document.getElementsByClassName("container")[0];
+const five=document.getElementsByClassName("five")[0];
+const five_1=document.getElementsByClassName("five_1")[0];
+const five_2=document.getElementsByClassName("five_2")[0];
+const five_3=document.getElementsByClassName("five_3")[0];
+const five_4=document.getElementsByClassName("five_4")[0];
+const five_5=document.getElementsByClassName("five_5")[0];
+const five_6=document.getElementsByClassName("five_6")[0];
 function showone() {
     let pass = window.prompt("enter the password")
     if (pass == "hello mr arohi") {
@@ -212,6 +219,23 @@ function showfour() {
         together.style.display = "block"
         btns.style.display = "none"
         document.body.classList.add("animated-bg")
+    }
+    else {
+        navigator.vibrate(200); // vibrate for 200ms
+        navigator.vibrate([
+            1200, 100, 500, 100, 300
+        ]);
+        document.body.classList.add("error")
+        setTimeout(() => {
+            document.body.classList.remove("error");
+        }, 2000);
+    }
+}
+function showfive() {
+    let pass = window.prompt("enter the password")
+    if (pass == "hello mr arohi") {
+        five.style.display = "block"
+        btns.style.display = "none"
     }
     else {
         navigator.vibrate(200); // vibrate for 200ms
