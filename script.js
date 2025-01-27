@@ -248,23 +248,23 @@ function showfive() {
         }, 2000);
     }
 }
-function showfour_2() {
-    four_2.style.display = "block";
-    four_1.style.display = "none";
+function showfive_2() {
+    five_2.style.display = "block";
+    fivr_1.style.display = "none";
 }
-function showfour_3() {
-    four_3.style.display = "block";
-    four_2.style.display = "none";
+function showfive_3() {
+    five_3.style.display = "block";
+    five_2.style.display = "none";
 }
-function showfour_4() {
-    four_4.style.display = "block";
-    four_3.style.display = "none";
+function showfive_4() {
+    five_4.style.display = "block";
+    five_3.style.display = "none";
 }
-function showfour_5() {
-    four_5.style.display = "block";
-    four_4.style.display = "none";
+function showfive_5() {
+    five_5.style.display = "block";
+    five_4.style.display = "none";
 }
-function showfour_6() {
-    four_6.style.display = "block";
-    four_5.style.display = "none";
+function showfive_6() {
+    five_6.style.display = "block";
+    fivr_5.style.display = "none";
 }
