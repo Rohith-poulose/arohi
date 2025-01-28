@@ -59,7 +59,7 @@ function showfive_4() {
 function showfive_5() {
     five_5.style.display = "block";
     five_4.style.display = "none";
-}
+} 
 function showfive_6() {
     five_6.style.display = "block";
     five_5.style.display = "none";
