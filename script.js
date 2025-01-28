@@ -250,7 +250,7 @@ function showfive() {
 }
 function showfive_2() {
     five_2.style.display = "block";
-    fivr_1.style.display = "none";
+    five_1.style.display = "none";
 }
 function showfive_3() {
     five_3.style.display = "block";
@@ -266,5 +266,5 @@ function showfive_5() {
 }
 function showfive_6() {
     five_6.style.display = "block";
-    fivr_5.style.display = "none";
+    five_5.style.display = "none";
 }
