@@ -33,7 +33,7 @@ const content = document.getElementsByClassName("content")[0];
 const one = document.getElementsByClassName("one")[0];
 const two = document.getElementsByClassName("two")[0];
 const three = document.getElementsByClassName("three")[0];
-const btns = document.getElementsByClassName("btns")[0];
+var btns = document.getElementsByClassName("btns")[0];
 const container = document.getElementsByClassName("container")[0];
 
 function showone() {
@@ -193,20 +193,20 @@ function showtogether(){
 
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx3Xe6juZVPddRr1peW5vtqAzBv9dJRriUyJbICgYhfgI1CAXMWk8Lo-0LGHR29GPsQ/exec'
-const form = document.forms['submit-to-google-sheet']
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML="Message sent successfully"
-        setTimeout (function(){
-            msg.innerHTML="";
-        },5000);
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-})
+// const scriptURL1 = 'https://script.google.com/macros/s/AKfycbx3Xe6juZVPddRr1peW5vtqAzBv9dJRriUyJbICgYhfgI1CAXMWk8Lo-0LGHR29GPsQ/exec'
+// // const form1 = document.forms['submit-to-google-sheet']
+// form.addEventListener('submit', e => {
+//   e.preventDefault()
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response => {
+//         msg.innerHTML="Message sent successfully"
+//         setTimeout (function(){
+//             msg.innerHTML="";
+//         },5000);
+//         form.reset()
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })
 function showfour() {
     let pass = window.prompt("enter the password")
     if (pass == "hello mr arohi") {

@@ -16,7 +16,7 @@
             <button onclick="showtwo()">two</button>
             <button onclick="showthree()">three</button>
             <button onclick="showfour()">four</button>
-            <button onclick="showfive()">five</button>
+            <button id="Buttonfive">five</button>
         </div>
         <!-- section four -->
         <div class="together ">
@@ -146,8 +146,8 @@
             <div id="nahMessage" style="display: none; text-align: center; margin-top: 20px;">
                 <p>sherinna venda engil venda...>-<< /p>
             </div>
-            <!-- section five -->
         </div>
+        <!-- section five -->
         <div class="five">
             <div class="five_1">
                 <h2>hey minnale </h2>
@@ -158,14 +158,13 @@
                 <button onclick="showfive_3()">off course *_*</button>
             </div>
             <div class="five_3">
-                <h2>lets make a wish</h2>
-                <form name="google-sheet">
-                <input name="message" type="text" id="wish_msg" required placeholder="enter your wish">
-                <button type="button" onclick="showfive_4()">send</button>
-                </form>
+                <h2>my favorite person in this world</h2>
+                <input name="message" type="text" id="wish_msg" required placeholder="enter his/her name">
+                <button id="btn4" onclick="showfive_4()">send</button>
             </div>
             <div class="five_4">
                 <h2 id="wish_ans"></h2>
+                <P id="wish_p"></P>
                 <button onclick="showfive_5()">eahh!</button>
             </div>
             <div class="five_5">
@@ -177,8 +176,8 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
 </body>
 
 </html>
