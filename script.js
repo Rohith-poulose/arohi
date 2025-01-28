@@ -4,8 +4,6 @@ const magic = document.getElementsByClassName("magic")[0];
 const mix = document.getElementsByClassName("mix")[0];
 const video = document.getElementsByClassName("video")[0];
 const nahMessage = document.getElementById("nahMessage");
-const wish_msg = document.getElementById("wish_msg");
-const wish_ans = document.getElementById("wish_ans");
 const p2 = document.getElementsByClassName("p2")[0];
 const p3 = document.getElementsByClassName("p3")[0];
 const p4 = document.getElementsByClassName("p4")[0];
@@ -37,13 +35,7 @@ const two = document.getElementsByClassName("two")[0];
 const three = document.getElementsByClassName("three")[0];
 const btns = document.getElementsByClassName("btns")[0];
 const container = document.getElementsByClassName("container")[0];
-const five=document.getElementsByClassName("five")[0];
-const five_1=document.getElementsByClassName("five_1")[0];
-const five_2=document.getElementsByClassName("five_2")[0];
-const five_3=document.getElementsByClassName("five_3")[0];
-const five_4=document.getElementsByClassName("five_4")[0];
-const five_5=document.getElementsByClassName("five_5")[0];
-const five_6=document.getElementsByClassName("five_6")[0];
+
 function showone() {
     let pass = window.prompt("enter the password")
     if (pass == "hello mr arohi") {
@@ -232,42 +224,4 @@ function showfour() {
             document.body.classList.remove("error");
         }, 2000);
     }
-}
-function showfive() {
-    let pass = window.prompt("enter the password")
-    if (pass == "hello mr arohi") {
-        five.style.display = "block"
-        btns.style.display = "none"
-    }
-    else {
-        navigator.vibrate(200); // vibrate for 200ms
-        navigator.vibrate([
-            1200, 100, 500, 100, 300
-        ]);
-        document.body.classList.add("error")
-        setTimeout(() => {
-            document.body.classList.remove("error");
-        }, 2000);
-    }
-}
-function showfive_2() {
-    five_2.style.display = "block";
-    five_1.style.display = "none";
-}
-function showfive_3() {
-    five_3.style.display = "block";
-    five_2.style.display = "none";
-}
-function showfive_4() {
-    five_4.style.display = "block";
-    five_3.style.display = "none";
-    wish_ans.innerHTML=wish_msg.value;
-}
-function showfive_5() {
-    five_5.style.display = "block";
-    five_4.style.display = "none";
-}
-function showfive_6() {
-    five_6.style.display = "block";
-    five_5.style.display = "none";
 }

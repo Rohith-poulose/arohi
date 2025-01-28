@@ -10,6 +10,15 @@
 
 <body>
     <div class="container">
+        <!-- section buttons -->
+        <div class="btns">
+            <button onclick="showone()">one</button>
+            <button onclick="showtwo()">two</button>
+            <button onclick="showthree()">three</button>
+            <button onclick="showfour()">four</button>
+            <button onclick="showfive()">five</button>
+        </div>
+        <!-- section four -->
         <div class="together ">
             <div class="together-1">
                 <h1>When We Are Together</h1>
@@ -29,14 +38,7 @@
                 <video src="assets/1 (1).mp4" width="100%" controls></video>
             </div>
         </div>
-        <div class="btns">
-            <button onclick="showone()">one</button>
-            <button onclick="showtwo()">two</button>
-            <button onclick="showthree()">three</button>
-            <button onclick="showfour()">four</button>
-            <button onclick="showfive()">five</button>
-
-        </div>
+        <!-- section three -->
         <div class="three">
             <div class="content">
                 <h2>Mrs Arohi</h2>
@@ -50,6 +52,8 @@
                 <video src="assets/biggest blessings.mp4" controls width="100%"></video>
             </div>
         </div>
+
+        <!-- section two -->
         <div class="two">
             <div class="message">
                 <h1>Hello, I am Mr. Arohi</h1>
@@ -90,6 +94,7 @@
                 <video src="assets/right person.mp4" controls width="100%"></video>
             </div>
         </div>
+        <!-- section one -->
         <div class="one">
             <div class="first">
                 <div class="box">
@@ -141,6 +146,7 @@
             <div id="nahMessage" style="display: none; text-align: center; margin-top: 20px;">
                 <p>sherinna venda engil venda...>-<< /p>
             </div>
+            <!-- section five -->
         </div>
         <div class="five">
             <div class="five_1">
@@ -153,8 +159,10 @@
             </div>
             <div class="five_3">
                 <h2>lets make a wish</h2>
-                <input type="text" placeholder="enter your wish" name="wish" id="wish_msg">
-                <button onclick="showfive_4()">submit</button>
+                <form name="google-sheet">
+                <input name="message" type="text" id="wish_msg" required placeholder="enter your wish">
+                <button type="button" onclick="showfive_4()">send</button>
+                </form>
             </div>
             <div class="five_4">
                 <h2 id="wish_ans"></h2>
@@ -170,6 +178,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
