@@ -4,6 +4,8 @@ const magic = document.getElementsByClassName("magic")[0];
 const mix = document.getElementsByClassName("mix")[0];
 const video = document.getElementsByClassName("video")[0];
 const nahMessage = document.getElementById("nahMessage");
+const wish_msg = document.getElementById("wish_msg");
+const wish_ans = document.getElementById("wish_ans");
 const p2 = document.getElementsByClassName("p2")[0];
 const p3 = document.getElementsByClassName("p3")[0];
 const p4 = document.getElementsByClassName("p4")[0];
@@ -259,6 +261,7 @@ function showfive_3() {
 function showfive_4() {
     five_4.style.display = "block";
     five_3.style.display = "none";
+    wish_ans.innerHTML=wish_msg.value;
 }
 function showfive_5() {
     five_5.style.display = "block";
@@ -268,3 +271,17 @@ function showfive_6() {
     five_6.style.display = "block";
     five_5.style.display = "none";
 }
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycby8pXx3kDEriPVTOI4UlEHXYvuHxkKYhvGrgTd_oBRS-8G3Vrk5vFulHAh92Mk6-XHK/exec'
+
+const form = document.forms['wish-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Form is submitted" ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
